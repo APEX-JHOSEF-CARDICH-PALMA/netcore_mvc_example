@@ -7,7 +7,7 @@ namespace netcore_mvc_example.Models
 {
     public class Category
     {
-        public int CategoryId { get; set; }
+        public int Id { get; set; }
         public string CatergoryName { get; set; }
         /**
          * Relationship: Category One-to-Many Products
@@ -16,7 +16,7 @@ namespace netcore_mvc_example.Models
          * 1 -  create the foreing key
          * 2 -  create a list that represent the products that one category can contain
          */
-        public ICollection<Product> Products { get; set; }
+        public virtual ICollection<Product> Products { get; set; }
 
     }
 }
