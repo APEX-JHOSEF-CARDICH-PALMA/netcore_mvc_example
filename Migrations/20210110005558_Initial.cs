@@ -20,7 +20,7 @@ namespace netcore_mvc_example.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Contact",
+                name: "Client",
                 columns: table => new
                 {
                     ClientID = table.Column<int>(type: "int", nullable: false)
@@ -30,7 +30,7 @@ namespace netcore_mvc_example.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Contact", x => x.ClientID);
+                    table.PrimaryKey("PK_Client", x => x.ClientID);
                 });
 
             migrationBuilder.CreateTable(
@@ -63,7 +63,7 @@ namespace netcore_mvc_example.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Contact");
+                name: "Client");
 
             migrationBuilder.DropTable(
                 name: "Product");

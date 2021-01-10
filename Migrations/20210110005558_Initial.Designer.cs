@@ -9,7 +9,7 @@ using netcore_mvc_example.Context;
 namespace netcore_mvc_example.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20210110003632_Initial")]
+    [Migration("20210110005558_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -50,7 +50,7 @@ namespace netcore_mvc_example.Migrations
 
                     b.HasKey("ClientID");
 
-                    b.ToTable("Contact");
+                    b.ToTable("Client");
                 });
 
             modelBuilder.Entity("netcore_mvc_example.Models.Product", b =>

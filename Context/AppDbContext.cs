@@ -21,7 +21,7 @@ namespace netcore_mvc_example.Context
          *Se llaman igual que en la base de datos
          */
         public DbSet<Category> Category { get; set; }
-        public DbSet<Client> Contact { get; set; }
+        public DbSet<Client> Client { get; set; }
         public DbSet<Product> Product { get; set; }
 
     }

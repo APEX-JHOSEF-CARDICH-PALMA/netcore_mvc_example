@@ -48,7 +48,7 @@ namespace netcore_mvc_example.Migrations
 
                     b.HasKey("ClientID");
 
-                    b.ToTable("Contact");
+                    b.ToTable("Client");
                 });
 
             modelBuilder.Entity("netcore_mvc_example.Models.Product", b =>
