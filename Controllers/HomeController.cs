@@ -25,6 +25,7 @@ namespace netcore_mvc_example.Controllers
 
         public IActionResult Privacy()
         {
+            ViewBag.Message = "Hola, esta es una prueba de uso del View Bag, aqui podemos pasar de todo";
             return View();
         }
 
